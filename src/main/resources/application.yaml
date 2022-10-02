@@ -1,1 +1,14 @@
+management:
+  health:
+    diskspace:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+#        include: health,metrics
 
+
+logging:
+  level:
+    org.springframework.r2dbc: DEBUG
